@@ -1,0 +1,50 @@
+/* 📌 General Styling */
+.title-text {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px black;
+    margin-bottom: 10px;
+}
+
+.subtitle-text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #f8f8f8;
+    text-shadow: 1px 1px 3px black;
+    margin-bottom: 20px;
+}
+
+/* 📌 Button Styling */
+button {
+    background-color: black !important;
+    color: white !important;
+    border-radius: 8px !important;
+    font-size: 16px !important;
+    padding: 10px 15px !important;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #e0e0e0 !important;
+}
+
+/* 📌 Sidebar Styling */
+.stSidebar {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+}
+
+/* 📌 Text Area */
+textarea {
+    font-size: 16px !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+    color: black !important;
+}
+
+/* 📌 Page Background */
+.stApp {
+    background-color: rgba(0, 0, 0, 0.6);
+}
