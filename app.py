@@ -68,7 +68,7 @@ if "fetching" not in st.session_state:
     st.session_state.fetching = False  # ✅ Track fetching status
 
 # 🔥 **Hardcoded API Key (Replace with a valid one)**
-API_KEY = "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"  # ✅ Keep this format
+API_KEY = "API HERE "  # ✅ Keep this format
 
 # ✅ Generate Recipe Button
 if st.button("Generate Recipe", key="generate_recipe", help="Click to generate a unique recipe"):
