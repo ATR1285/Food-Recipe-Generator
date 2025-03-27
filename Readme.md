@@ -47,6 +47,27 @@ streamlit run app.py
 Replace the API key in `app.py` with your valid **Groq API Key**:
 ```python
 API_KEY = "your_groq_api_key_here"
+
+
+📂 AI_Recipe_Generator/
+│── 📂 static/                  # Static assets (CSS, images, etc.)
+│   │── background.jpg          # Optional background image
+│   │── styles.css              # Custom CSS styles
+│
+│── 📂 assets/                  # Store additional resources (if needed)
+│   │── 📂 audio/                   # Temporary storage for generated audio files
+│   │── temp_audio.mp3          # (Dynamically generated)
+│
+│── 📂env/
+│
+│── 📂 Template/                   
+│   │── index.hrml                  # frotend 
+│
+│── 📜 app.py                   # Main Streamlit app
+│── 📜 requirements.txt         # Dependencies (gtts, requests, streamlit, etc.)
+│── 📜 .gitignore               # Ignore unnecessary files (e.g., `audio/*.mp3`)
+│── 📜 config.py                # API keys & configuration settings
+
 ```
 
 ## 📌 Notes
