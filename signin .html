@@ -1,0 +1,34 @@
+import streamlit as st
+
+# Simple user credentials (for demo; don't use in production)
+USERNAME = "admin"
+PASSWORD = "1234"
+
+def sign_in():
+    st.title("🔐 Sign In")
+    
+    # Session state to track login
+    if "authenticated" not in st.session_state:
+        st.session_state.authenticated = False
+
+    if not st.session_state.authenticated:
+        username = st.text_input("Username")
+        password = st.text_input("Password", type="password")
+        if st.button("Login"):
+            if username == USERNAME and password == PASSWORD:
+                st.session_state.authenticated = True
+                st.success("✅ Login Successful!")
+            else:
+                st.error("❌ Invalid credentials")
+    else:
+        show_ai_generator()
+
+def show_ai_generator():
+    st.title("🤖 AI Generator")
+    st.write("Welcome! You can now use the AI Generator.")
+    # You can now add your actual audio generation or AI logic here
+    st.button("Generate Audio")  # Example
+
+# Main app entry point
+if __name__ == "__main__":
+    sign_in()
